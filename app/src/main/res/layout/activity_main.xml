@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/linearPersegi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Luas Persegi"
+                android:textSize="24sp"
+                android:layout_gravity="center_horizontal"/>
+            <EditText
+                android:layout_margin="18dp"
+                android:id="@+id/sisiPersegi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Masukkan Panjang Sisi"/>
+            <LinearLayout
+                android:layout_margin="18dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <Button
+                    android:onClick="btn_hasil_persegi"
+                    android:id="@+id/btnHasilPersegi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Hasil"/>
+                <TextView
+                    android:id="@+id/txtHasilPersegi"
+                    android:layout_marginLeft="50dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0 CM"/>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/linearPersegiPanjang"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/linearPersegi"
+            android:layout_marginTop="24dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="Luas Persegi Panjang"
+                android:textSize="24sp" />
+
+            <EditText
+                android:id="@+id/panjangPersegiPanjang"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="18dp"
+                android:hint="Masukkan Panjang Sisi" />
+
+            <EditText
+                android:id="@+id/lebarPersegiPanjang"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="18dp"
+                android:hint="Masukkan Lebar Sisi" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="18dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:onClick="btn_hasil_persegi_panjang"
+                    android:id="@+id/btnHasilPersegiPanjang"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Hasil" />
+
+                <TextView
+                    android:id="@+id/txtHasilPersegiPanjang"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="50dp"
+                    android:text="0 CM" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="24dp"
+            android:layout_below="@id/linearPersegiPanjang"
+            android:id="@+id/linearJajarGenjang"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Luas Jajar Genjang"
+                android:textSize="24sp"
+                android:layout_gravity="center_horizontal"/>
+
+            <EditText
+                android:id="@+id/alasJajarGenjang"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="18dp"
+                android:hint="Masukkan Alas Sisi" />
+
+            <EditText
+                android:id="@+id/tinggiJajarGenjang"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="18dp"
+                android:hint="Masukkan Tinggi Sisi" />
+
+            <LinearLayout
+                android:layout_margin="18dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <Button
+                    android:onClick="btn_hasil_segitiga"
+                    android:id="@+id/btnHasilJajarGenjang"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Hasil"/>
+                <TextView
+                    android:id="@+id/txtHasilJajarGenjang"
+                    android:layout_marginLeft="50dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0 CM"/>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</ScrollView>
